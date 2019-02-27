@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(https://res.cloudinary.com/konijn/image/upload/v1551169892/Lantern.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+} 
+
+h1 {
+    height: 80px;
+    margin-left: 3%;
+    margin-top: 10%;
+    color: rgb(225, 225, 159);
+    font-size: 4.2em;
+    font-family: Caveat, Georgia, Verdana;
+    text-shadow: 5px 5px 15px rgb(35, 34, 31);
+    border-bottom: 1px solid rgb(177, 139, 119);
+    border-radius: 0 15px;
+}
+
+.button {
+    background: linear-gradient(160deg, rgba(220, 40, 30, 0.8), rgb(240, 100, 90), rgba(245, 210, 210, 0.8));
+    width: 170px;
+    height: 50px;
+    padding: 6px 8px;
+    margin-left: 17%;
+    margin-top: 18%;
+    color: rgb(225, 225, 179);
+    text-shadow: 3px 3px 15px rgb(40, 40, 40);
+    font-family: Raleway, Georgia, Verdana;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 2px 2px 25px 2px rgb(40, 40, 40);
+}
+
+.button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(160deg, rgba(240, 40, 30, 0.8), rgb(255, 110, 90), rgba(255, 230, 230, 0.8));
+    cursor: pointer;
+}
