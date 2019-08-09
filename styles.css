@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+.page__wrapper {
+    height: 100vh;
+}
+
+.nav__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Mali', cursive, 'Times New Roman', Times, serif;
+    border-bottom: solid 4px rgb(6, 165, 165);
+}
+
+.fa-bars {
+    padding-left: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.fa-bars:hover, .page__header:hover {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.page__header {
+    font-size: 2.1rem;
+    padding-left: 30px;
+}
+
+.li__about {
+    margin-left: auto;
+}
+
+.li__about, .li__contact {
+    font-size: 1.2rem;
+    padding-right: 15px;
+}
+
+.li__about:hover, .li__contact:hover, .bible__book:hover {
+    cursor: pointer;
+    color: #636a6e;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+}
+
+.side__wrapper {
+    width: 10vw;
+    padding-bottom: 40px;
+    background-color: #d9e5eb91;
+    border-right: solid 2px #636a6e8a;
+    box-shadow: #636a6ee1 1px 1px 10px;
+}
+
+.bible__book {
+    padding: 12px;
+    font-family: 'Abel', 'Times New Roman', Times, serif;
+    font-size: 1.12rem;
+}
+
+.content__wrapper {
+    display: block;
+    font-family: 'Abel', 'Times New Roman', Times, serif;
+}
+
+.welcome__header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.welcome {
+    margin-top: 15px;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+.par__header {
+    margin: 12px 7px;
+}
+
+.general__par {
+    margin: 17px 0 28px 0;
+}
+
+.verse__header {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-weight: 500;
+    border-bottom: solid 1px #636a6e7e;
+    width: 50px;
+}
+
+.bible__verseHB, .bible__verseHB {
+    margin-bottom: 1px;
+    line-height: 28px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(20, 155, 155);
+    padding: 5px 0 3.5px 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 7px 3px 0;
+    list-style: none;
+}
+
+.footer__list > li, .flist__item {
+    padding-right: 12px;
+    font-family: 'Abel', 'Times New Roman', Times, serif;
+    color: rgb(243, 234, 234);
+}
+
+.flist__item:hover {
+    cursor: pointer;
+    text-shadow: rgba(223, 221, 221, 0.877) 1px 1px 5px;
+}
+
+@media only screen and (max-width: 1370px) {
+    .bible__book {
+        font-size: 1.07rem;
+    }
+
+    .side__wrapper {
+        width: 12vw;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .bible__book {
+        font-size: 1rem;
+    }
+
+    .page__header {
+        font-size: 1.7rem;
+        padding-top: 5px;
+    }
+
+    .side__wrapper {
+        width: 18vw;
+    }
+
+    .welcome__header {
+        font-size: 1.3rem;
+    }
+
+    .welcome {
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .fa-bars {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .page__header {
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-bottom: 7px;
+    }
+
+    .li__about, .li__contact {
+        font-size: 0.8rem;
+    }
+
+    .side__wrapper {
+        width: 100vw;
+        padding-bottom: 33px;
+        border: none;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    #toggle__menu {
+        display: none;
+    }
+
+    .menu__toggleShow {
+        display: flex;
+    }
+
+    .bible__book {
+        font-size: 1.2rem;
+        border-bottom: solid 1px #a4aaad56;
+        box-shadow: #b7c2c986 1px 1px 1px;
+        width: 100vw;
+    }
+
+    .footer__list {
+        justify-content: space-around;
+        padding: none;
+    }
+
+    .footer__list > li {
+        font-size: 0.8rem;
+    }
+}
+
+    @media only screen and (max-width: 412px) {
+        .fa-bars {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .page__header {
+            font-size: 1rem;
+            padding-bottom: 7px;
+        }
+
+        .li__about, .li__contact {
+            font-size: 0.7rem;
+        }
+
+        .side__wrapper {
+            padding-bottom: 50px;
+        }
+
+        .welcome__header {
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+
+        .welcome {
+            margin-bottom: 80px;
+        }
+
+        .footer__list {
+            align-items: center;
+            padding: 12px 0 5px 5px;
+        }
+    }
